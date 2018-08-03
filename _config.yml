@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 二狗的成长日记
+title: 为中华之崛起而coding
 subtitle:
 description:
 keywords:
@@ -13,9 +13,9 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://www.roygrowup.top
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 
 # Directory
@@ -27,6 +27,8 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - README.md
+  - CNAME
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -82,3 +84,11 @@ deploy:
   # repo: https://github.com/royhsiang/royhsiang.github.io.git
   repo: git@github.com:RoyHsiang/RoyHsiang.github.io.git
   branch: master
+
+
+feed: # RSS订阅插件
+  type: atom
+  path: atom.xml
+  limit: 0
+
+plugins: hexo-generate-feed
